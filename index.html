@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELTRON - Tecnología y Accesorios</title>
+    <link rel="stylesheet" href="intento2.css">
+    
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('s').value.toLowerCase();
+            const keywords = {
+                'placa madre': 'https://www.infotec.com.pe/30-placa-madre',
+                'memoria ram': 'https://www.infotec.com.pe/32-memoria-ram',
+                'cpu': 'https://www.infotec.com.pe/143-procesadores-intel',
+                'tarjeta gráfica': 'https://www.infotec.com.pe/133-t-de-video-gamer',
+                'disco duro': 'https://www.infotec.com.pe/33-disco-duro-hdd',
+                'fuente de poder': 'https://www.infotec.com.pe/111-fuente-de-poder',
+                'gabinete': 'https://www.infotec.com.pe/136-case-s-gamer',
+                'refrigeración líquida': 'https://www.rstore.pe/product/refrigeracion-liquida-aerocool-mirage-l120-pwm-blanco',
+                'teclado mecánico': 'https://horsansystem.com/teclados/272-l98-teclado-mecanico-inalambrico-con-pantalla-lcd-tft-de-114.html',
+                'ratón gaming': 'https://www.coolbox.pe/gamer/accesorios-gamer/mouses-gamer',
+                'monitor': 'https://www.falabella.com/falabella-cl/product/123458080/Monitor-Gamer-Curvo-Led-27-Full-HD-240Hz-1Ms/123458081',
+                'auriculares': 'https://www.falabella.com.pe/falabella-pe/product/129901306/Auriculares-Gamer-Profesional-G9000-Rgb-Azul/129901307',
+                'webcam': 'https://www.amazon.co.uk/Elgato-Facecam-Conferencing-Fixed-Focus-Zoom/dp/B0973DV11T',
+                'impresora': 'https://epson.com.pe/Para-el-hogar/Impresoras/Inyecci%C3%B3n-de-tinta/Impresora-Fotogr%C3%A1fica-Inal%C3%A1mbrica-EcoTank-L8050/p/C11CK37301',
+                'escáner': 'https://epson.com.pe/Para-el-hogar/Esc%C3%A1neres/Fotos/Esc%C3%A1ner-Epson-Perfection-V600-Foto/p/B11B198021',
+                'proyector': 'https://epson.com.pe/Para-el-trabajo/Proyectores/Salas-Grandes/Proyector-L%C3%A1ser-EB-PU2213B-con-3LCD/p/V11HA68820',
+                'cámaras de seguridad': 'https://hikvision-peru.com/producto/kit-2-camaras-seguridad-ip-2-megapixeles-con-poe-hikvision-kitip2_2mp/',
+                'router': 'https://www.ubuy.pe/sp/product/BHEE2LRDI-tp-link-ac1750-smart-wifi-router-archer-a7-dual-band-gigabit-wireless-internet-router-for-home-works-with-alexa-vpn-server-parental-control-qos',
+                'sistema operativo': 'https://computerhouse.pe/products/sistema-operativo-microsoft-windows-home-11-64-bits-all-languages-pk-lic-online-dwnld-nr',
+                'antivirus': 'https://www.indiamart.com/proddetail/antivirus-software-22581820188.html',
+                'software de diseño': 'https://www.capterra.pe/directory/31010/graphic-design/software',
+                'herramientas de oficina': 'https://es.zk-itech.com/product-list/oa-office-equipment-and-household-appliance-tools',
+                'cables': 'https://www.lavanguardia.com/tecnologia/20191208/472074931495/cables-y-adaptadores-usb-conexiones-mejorar-velocidad-tasa-de-transferencia.html',
+                'sillas ergonómicas': 'https://imcesa.com.pe/silla-de-oficina-semi-gerenciales-vector-ergonomica-con-respaldo-alto-de-malla-con-soporte-lumbar-descansabrazos-respaldo-y-reposacabezas-ajustables-certificacion-bifma/',
+                'mesas para computadoras': 'https://articulo.mercadolibre.com.co/MCO-594862362-en-forma-de-l-escritorio-del-ordenador-de-mesa-escrito-_JM',
+                'estabilizadores': 'https://www.noaltecnologia.com/c/componentes/estabilizadores/',
+
+
+            };
+
+            for (const key in keywords) {
+                if (query.includes(key)) {
+                    window.location.href = keywords[key]; 
+                    return;
+                }
+            }
+
+            alert('No se encontraron resultados para "' + query + '".');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>DELTRON</h1>
+        <br>
+        <br>
+        <br>
+        <nav>
+            <ul class="nav">
+                <li><a href="">Inicio</a></li>
+                <li><a href="https://www.deltron.com.pe/grupo_deltron">Grupo Deltron</a></li>
+                <li><a href="https://www.deltron.com.pe/sucursales.php">Sucursales</a></li>
+                <li>
+                    <a href="#">Catálogo</a>
+                    <ul>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/listaprodnw.php">Lista de precios</a></li>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/items/postsql.php?&pmarca=todo">Productos por marca</a></li>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/items/postsql.php">Productos por tipo</a></li>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=MBD">Guía de motherboards</a></li>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=PDA">Guía de Tablets</a></li>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=NBK">Guía de Notebooks</a></li>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=HDES&STK=1">Guía de SSD</a></li>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=MEM&STK=1">Guía de Memorias RAM</a></li>
+                        <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador_web_v1.php">Buscador de Productos</a></li>
+                        <li><a href="https://www.deltron.com.pe/include/catalogo.php">Descargar Catálogos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Distribuidores</a>
+                    <ul>
+                        <li><a href="https://xpand.deltron.com.pe/xtranet/preCust/frm_inscripcion.php?from=new-menu">Inscripción</a></li>
+                        <li><a href="https://www-spd.xpand.com.pe/xtranet/clientes/index.php">Extranet</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://listo.deltron.com.pe/">Servicio Técnico</a></li>
+                <li><a href="ayuda.html">Ayuda (Buscador - Palabras clave)</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form method="get" onsubmit="handleSearch(event);" id="buscarform">
+                <fieldset>
+                    <input type="text" id="s" name="query" placeholder="Buscar productos..." />
+                    <button class="button" type="submit">Buscar</button> 
+                </fieldset>
+            </form>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Productos Destacados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre del Producto</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="menuclase/memoriaram.jpg" alt="Memoria RAM"></td>
+                    <td>MEMORIA RAM</td>
+                    <td>Memoria de acceso aleatorio para almacenamiento a corto plazo. Ideal para ejecutar aplicaciones y mejorar el rendimiento del sistema.</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/placamadre.jpg" alt="Placa Madre"></td>
+                    <td>PLACA MADRE</td>
+                    <td>La placa de circuito impreso principal de una computadora, que conecta todos los componentes y permite la comunicación entre ellos.</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/cpu.jpg" alt="CPU"></td>
+                    <td>CPU</td>
+                    <td>Unidad central de procesamiento que convierte datos en señales digitales. Es el cerebro de la computadora, ejecutando instrucciones y procesando datos.</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/tarjetagrafica.jfif" alt="Tarjeta Gráfica"></td>
+                    <td>TARJETA GRÁFICA</td>
+                    <td>Componente encargado de renderizar imágenes y videos. Ideal para gaming y diseño gráfico, mejora la calidad visual de los contenidos.</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/discoduro.jpg" alt="Disco Duro"></td>
+                    <td>DISCO DURO</td>
+                    <td>Dispositivo de almacenamiento permanente que guarda datos y programas. Capacidad de almacenamiento variada según el modelo.</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/fuentedepoder.jfif" alt="Fuente de Poder"></td>
+                    <td>FUENTE DE PODER</td>
+                    <td>Proporciona la energía necesaria para que los componentes de la computadora funcionen correctamente. Varía en potencia según el sistema.</td>
+                    <td>$70</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/gabinete.jfif" alt="Gabinete"></td>
+                    <td>GABINETE</td>
+                    <td>Chasis que alberga todos los componentes de la computadora. Su diseño puede afectar la ventilación y la estética del sistema.</td>
+                    <td>$60</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/refrigeracionliquida.png" alt="Refrigeración Líquida"></td>
+                    <td>REFRIGERACIÓN LÍQUIDA</td>
+                    <td>Sistema de enfriamiento avanzado que utiliza líquido para disipar el calor de componentes críticos, mejorando el rendimiento y la vida útil.</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/tecladomecanico.jfif" alt="Teclado Mecánico"></td>
+                    <td>TECLADO MECÁNICO</td>
+                    <td>Teclado que utiliza interruptores mecánicos individuales para cada tecla. Ofrece una respuesta táctil y durabilidad superior.</td>
+                    <td>$120</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/ratongaming.jfif" alt="Ratón Gaming"></td>
+                    <td>RATÓN GAMING</td>
+                    <td>Ratón diseñado para gamers, con alta precisión y velocidad de respuesta. Puede incluir botones programables y iluminación RGB.</td>
+                    <td>$90</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/monitor.jfif" alt="Monitor"></td>
+                    <td>MONITOR</td>
+                    <td>Pantalla que muestra la salida visual de la computadora. La resolución y el tamaño influyen en la calidad de imagen.</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/auriculares.avif" alt="Auriculares"></td>
+                    <td>AURICULARES</td>
+                    <td>Dispositivo de audio que permite escuchar sonido de manera personal. Pueden ser con o sin cable, y algunos ofrecen cancelación de ruido.</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/webcam.jpg" alt="Webcam"></td>
+                    <td>WEBCAM</td>
+                    <td>Cámara digital que permite la transmisión de video en tiempo real. Ideal para videollamadas y streaming.</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/impresora.jfif" alt="Impresora"></td>
+                    <td>IMPRESORA</td>
+                    <td>Dispositivo que produce una copia física de documentos digitales. Puede imprimir en color o en blanco y negro.</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/escaner.jpg" alt="Escáner"></td>
+                    <td>ESCÁNER</td>
+                    <td>Dispositivo que convierte documentos físicos en archivos digitales. Útil para archivar y compartir información.</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/proyector.jpg" alt="Proyector"></td>
+                    <td>PROYECTOR</td>
+                    <td>Dispositivo que proyecta imágenes o videos en una pantalla grande. Ideal para presentaciones y cine en casa.</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/camarasdeseguridad.jfif" alt="Cámaras de Seguridad"></td>
+                    <td>CÁMARAS DE SEGURIDAD</td>
+                    <td>Dispositivo de vigilancia que permite monitorear áreas específicas. Puede incluir grabación de video y conexión a internet.</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/router.jpg" alt="Router"></td>
+                    <td>ROUTER</td>
+                    <td>Dispositivo que permite la conexión de múltiples dispositivos a una red. Fundamental para el acceso a internet.</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/sistemaoperativo.jfif" alt="Sistema Operativo"></td>
+                    <td>SISTEMA OPERATIVO</td>
+                    <td>Software que gestiona el hardware y proporciona servicios a los programas. Ejemplos incluyen Windows, macOS y Linux.</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/antivirus.jfif" alt="Antivirus"></td>
+                    <td>ANTIVIRUS</td>
+                    <td>Software que protege a la computadora de virus y malware. Esencial para la seguridad informática.</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/softwarediseño.jfif" alt="Software de Diseño"></td>
+                    <td>SOFTWARE DE DISEÑO</td>
+                    <td>Programas que permiten crear y editar gráficos, planos y presentaciones. Ejemplos incluyen Adobe Photoshop y AutoCAD.</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/herramientasdeoficina.jpg" alt="Herramientas de Oficina"></td>
+                    <td>HERRAMIENTAS DE OFICINA</td>
+                    <td>Software que facilita tareas administrativas y de gestión. Incluye procesadores de texto, hojas de cálculo, etc.</td>
+                    <td>$120</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/cablesyadaptadores.jpeg" alt="Cables y Adaptadores"></td>
+                    <td>CABLES Y ADAPTADORES</td>
+                    <td>Conectores que permiten la comunicación entre dispositivos. Variedad de tipos según la necesidad (USB, HDMI, etc.).</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/sillasergonomicas.jfif" alt="Sillas Ergonómicas"></td>
+                    <td>SILLAS ERGONÓMICAS</td>
+                    <td>Sillas diseñadas para ofrecer comodidad y soporte durante largas horas de trabajo. Fomenta una buena postura.</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/mesascomputadoras.jfif" alt="Mesas para Computadoras"></td>
+                    <td>MESAS PARA COMPUTADORAS</td>
+                    <td>Mobiliario diseñado para soportar computadoras y accesorios. Variedades para uso doméstico y de oficina.</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td><img src="menuclase/estabilizadores.jpg" alt="Estabilizadores"></td>
+                    <td>ESTABILIZADORES</td>
+                    <td>Dispositivos que regulan la tensión eléctrica para proteger los equipos electrónicos. Previene daños por sobrecargas.
+                    <td>$50</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DELTRON. Todos los derechos reservados.</p>
+        <ul class="redes">
+            <div class="compartir">
+                <h3>Compartir:</h3>
+                <ul class="redes">
+                    <li class="icon facebook">
+                        <a href="https://www.facebook.com/" title="Compartir en Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <div class="tooltip">Facebook</div>
+                        </a>
+                    </li>
+                    <li class="icon twitter">
+                        <a href="https://x.com" title="Compartir en Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <div class="tooltip">Twitter</div>
+                        </a>
+                    </li>
+                    <li class="icon instagram">
+                        <a href="https://www.instagram.com/" title="Compartir en Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <div class="tooltip">Instagram</div>
+                        </a>
+                    </li>
+                    <li class="icon linkedin">
+                        <a href="https://pe.linkedin.com" title="Compartir en LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div class="tooltip">LinkedIn</div>
+                        </a>
+                    </li>
+                    <li class="icon pinterest">
+                        <a href="https://es.pinterest.com/" title="Compartir en Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                            <div class="tooltip">Pinterest</div>
+                        </a>
+                    </li>
+                    <li class="icon telegram">
+                        <a href="https://web.telegram.org/k/" title="Compartir en Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                            <div class="tooltip">Telegram</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
