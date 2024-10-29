@@ -20,7 +20,7 @@ header {
 .nav {
     list-style: none;
     padding: 0; 
-    text-align: left; /* Cambia el texto a la izquierda */
+    text-align: left; 
 }
 
 .nav > li {
@@ -56,7 +56,7 @@ header {
 
 .search-container {
     display: flex;
-    justify-content: flex-end; /* Alinear a la derecha */
+    justify-content: flex-end; 
     margin: 15px 0;
 }
 
@@ -148,15 +148,15 @@ footer {
     color: #333;
 }
 .compartir .redes {
-    display: flex; /* Asegura que los íconos se alineen en horizontal */
-    justify-content: center; /* Centra los íconos */
+    display: flex; 
+    justify-content: center; 
     padding: 0;
 }
 
 .compartir .redes .icon {
-    margin: 0 10px; /* Espaciado entre íconos */
+    margin: 0 10px; 
     transition: transform 0.3s;
-    position: relative; /* Para el tooltip */
+    position: relative; 
 }
 
 .compartir .redes .icon:hover {
@@ -166,7 +166,7 @@ footer {
 .compartir .redes .icon a {
     color: inherit;
     text-decoration: none;
-    font-size: 24px; /* Tamaño del ícono */
+    font-size: 24px; 
 }
 .redes {
     display: inline-flex;
@@ -180,12 +180,12 @@ footer {
   
 .redes .icon {
     position: relative;
-    background: #fff; /* Cambiar a otro color si es necesario */
+    background: #fff; 
     border-radius: 50%;
     margin: 10px;
     width: 50px;
     height: 50px;
-    font-size: 24px; /* Ajustar tamaño del ícono */
+    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +193,7 @@ footer {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    color: #333; /* Color del ícono */
+    color: #333; 
 }
   
 .redes .tooltip {
@@ -201,11 +201,11 @@ footer {
     top: 0;
     font-size: 14px;
     background: rgba(0, 0, 0, 0.7); /* Fondo del tooltip */
-    color: #fff; /* Color del texto del tooltip */
+    color: #fff;
     padding: 5px 8px;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Inicialmente invisible */
+    opacity: 0; 
     pointer-events: none;
     transition: all 0.3s;
 }
